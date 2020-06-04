@@ -4,9 +4,6 @@ module.exports = {
   },
   plugins: [
     {
-      pathPrefix: "/Portfolio_website",
-    },
-    {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: 'Luoming Zhang',
@@ -33,4 +30,5 @@ module.exports = {
     },
     `gatsby-plugin-sharp`,
   ],
+  pathPrefix: "/Portfolio_website",
 };
