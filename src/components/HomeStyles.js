@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { media } from './Breakpoints';
 
 export const HomeContainer = styled.main`
@@ -9,12 +9,15 @@ export const HomeContainer = styled.main`
   padding: 100px 5% 80px;
 `;
 
-// const MainWrapper = styled.div`
-//   a {
-//     color: ${props => props.color};
-//   }
-// `;
 
+const appear = keyframes`
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+`
 
 export const Image = styled.div`
   position: absolute !important;
@@ -22,6 +25,7 @@ export const Image = styled.div`
   right: 0px;
   padding-top: 50%;
   display: none;
+  opacity: 0;
 
   .gatsby-image-wrapper {
     position: absolute !important;
@@ -39,6 +43,8 @@ export const Image = styled.div`
   ${media.giant`
     width: 25%
     display: inline;
+    animation: ${appear} 1.2s forwards;
+    animation-delay: 3s;
   `}
 
 `;

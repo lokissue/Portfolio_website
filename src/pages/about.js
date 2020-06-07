@@ -24,7 +24,7 @@ export default class About extends React.Component {
                 </li>
                 <li>Excellent organization, self-motivation, and problem-solving skills.</li>
                 <li>Creative, strong communication skills and consistently meets deadlines.</li>
-                <li>Passionate about web development, data analysis and new technologies.</li>
+                <li>Passionate about web development, data analytics and new technologies.</li>
               </ul>
 
               <h4>&#047;&#042; Experience &#042;&#047;</h4>

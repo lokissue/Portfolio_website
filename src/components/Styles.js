@@ -262,32 +262,70 @@ const bottom_in = keyframes`
 `
 
 const Button = styled.div`
-  margin-top: 30px;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-  ${media.desktop`
-    animation: ${bottom_in} 3.8s ease-in forwards;
-  `}
+   position: relative;
+   margin-top: 50px;
+   padding: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 
-  a{
-    position: relative;
-    display: inline-block;
-    padding: 15px 30px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    text-decoration: none;
-    font-size: 24px;
-    overflow: hidden;
-    transition: 0.2s;
-  }
-  a:hover{
-    color: #255784;
-    background: #2196f3;
-    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
-  }
+  ${media.desktop`
+     animation: ${bottom_in} 3.8s ease-in forwards;
+   `}
+   
+   a {
+     position: relative;
+     padding: 10px 30px;
+     margin: 0 15px;
+     color: ${props=>props.color};
+     text-decoration: uppercase;
+     letter-spacing: 2px;
+     font-size: 20px;
+     overflow: hidden;
+     transition: 0.3s;
+     
+   }
+
+   a:hover {
+     background: ${props=>props.color};
+     color: #111;
+     box-shadow: 0 0 50px ${props=>props.color};
+     transition-delay: 0.2s;
+   }
+   a::before {
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 10px;
+     height: 10px;
+     border-top: 2px solid ${props=>props.color};
+     border-left: 2px solid ${props=>props.color};
+     transition: 0.3s;
+     transition-delay: 0.3s;
+   }
+   a:hover:before {
+      width: 100%;
+      height: 100%;
+      transition-delay: 0s;
+   }
+   a::after {
+     content: '';
+     position: absolute;
+     bottom: 0;
+     right: 0;
+     width: 10px;
+     height: 10px;
+     border-bottom: 2px solid ${props=>props.color};
+     border-right: 2px solid ${props=>props.color};
+     transition: 0.2s;
+     transition-delay: 0.3s;
+   }
+   a:hover:after {
+      width: 100%;
+      height: 100%;
+      transition-delay: 0s;
+   }
 `
 
 export {
