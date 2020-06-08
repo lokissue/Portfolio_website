@@ -247,16 +247,17 @@ const SiteLink = styled.div`
   `} 
 `;
 
-const bottom_in = keyframes`
+const pop_in = keyframes`
   0%{
-    
+    transform: scale(0);
     opacity: 0;
   }
   80%{
-    opacity: 0;
+    transform: scale(0);
+    opacity: .3;
   }
   100%{
-    
+    transform: scale(1.0);
     opacity: 1;
   }
 `
@@ -265,13 +266,17 @@ const Button = styled.div`
    position: relative;
    margin-top: 50px;
    padding: 0;
-   display: flex;
+   display: none;
    justify-content: center;
    align-items: center;
 
   ${media.desktop`
-     animation: ${bottom_in} 3.8s ease-in forwards;
+     animation: ${pop_in} 3.8s ease-in forwards;
    `}
+  
+  ${media.tablet`
+    display: flex;
+  `}
    
    a {
      position: relative;
@@ -283,9 +288,14 @@ const Button = styled.div`
      font-size: 20px;
      overflow: hidden;
      transition: 0.3s;
-     
+     -webkit-box-reflect: below 2px linear-gradient(transparent, #0003);
    }
-
+   a:nth-child(1) {
+     filter: hue-rotate(270deg);
+   }
+   a:nth-child(2){
+     filter: hue-rotate(115deg)
+   }
    a:hover {
      background: ${props=>props.color};
      color: #111;

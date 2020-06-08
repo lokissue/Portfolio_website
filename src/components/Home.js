@@ -27,9 +27,11 @@ const Home = () => {
         <TitleText1>Hey, my name's <br /> Luoming Zhang</TitleText1>
         <TitleText2 background='#16a085'> web developer </TitleText2>
         <TitleText2 background='#c90e9e'> data analyst </TitleText2>
-        <Button color='#92E258'><a href="/about" >ABOUT ME</a></Button>
-        <Button color='#FFA3FF'><a href="/projects" >PROJECTS</a></Button>
-        <Button color='#21ebff'><a href="https://www.dropbox.com/s/ca4enlwukhacl56/Luoming%20Zhang.pdf?dl=0" >RESUME <FaDownload /></a></Button>
+        <Button color='#21ebff'>
+          <a href="/about" >ABOUT ME</a>
+          <a href="/projects" >PROJECTS</a>
+          <a href="https://www.dropbox.com/s/ca4enlwukhacl56/Luoming%20Zhang.pdf?dl=0" >RESUME <FaDownload /></a>
+        </Button>
       </SiteTitle>
 
     </HomeContainer>
