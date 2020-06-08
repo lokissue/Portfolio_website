@@ -23,7 +23,7 @@ export const Image = styled.div`
   position: absolute !important;
   bottom: 0px;
   right: 0px;
-  padding-top: 50%;
+  padding-top: 10%;
   display: none;
   opacity: 0;
 
