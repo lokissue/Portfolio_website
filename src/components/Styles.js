@@ -10,7 +10,7 @@ const contact = '#2980b9';
 
 const SiteTitle = styled.div`
   font-family: sans-serif;
-  margin-top: 5vh;
+  margin-top: 4vh;
   text-align: center;
   position: aboslute;
 

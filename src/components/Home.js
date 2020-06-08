@@ -19,7 +19,6 @@ const Home = () => {
       }
     }
   `);
-
   return (
     <>
     <HomeContainer>
@@ -28,8 +27,8 @@ const Home = () => {
         <TitleText2 background='#16a085'> web developer </TitleText2>
         <TitleText2 background='#c90e9e'> data analyst </TitleText2>
         <Button color='#21ebff'>
-          <a href="/about" >ABOUT ME</a>
-          <a href="/projects" >PROJECTS</a>
+          <a href= "about" >ABOUT ME</a>
+          <a href="projects" >PROJECTS</a>
           <a href="https://www.dropbox.com/s/j3f85vf9xtkbxpx/Luoming%20Zhang%20-%20CV.pdf?dl=1" >RESUME <FaDownload /></a>
         </Button>
       </SiteTitle>
