@@ -29,7 +29,7 @@ const Home = () => {
         <Button color='#21ebff'>
           <a href= "about" >ABOUT ME</a>
           <a href="projects" >PROJECTS</a>
-          <a href="https://www.dropbox.com/s/j3f85vf9xtkbxpx/Luoming%20Zhang%20-%20CV.pdf?dl=1" >RESUME <FaDownload /></a>
+          <a href="https://www.dropbox.com/s/44ksuhylumx1o3a/Luoming%20Zhang%20-%20Resume.docx?dl=1" >RESUME <FaDownload /></a>
         </Button>
       </SiteTitle>
 

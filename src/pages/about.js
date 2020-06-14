@@ -29,10 +29,17 @@ export default class About extends React.Component {
 
               <h4>&#047;&#042; Experience &#042;&#047;</h4>
               <h5>&#047;&#047; Member of Localisation Team, KhanAcademy.org</h5>
-              <span className="time">&#047;&#047; MAY 2014 - PRESENT</span>
+              <span className="time">&#047;&#047; Jun 2019 - Dec 2019</span>
               <ul>
-                <li>Worked on a team of translator to coordinate and translate academic materials</li>
-                <li>Assisted in organising and preparing computer sicence topic materials</li>
+                <li>Weekly translation of 2000+ words questions/articles of computer science materials for the world’s leading non-profit educational organisation</li>
+                <li>Assisted in organising and preparing 50+ computer science topic materials, cooperated with a team of over 60 volumteers.</li>
+              </ul>
+
+              <h5>&#047;&#047; Casual Volunteer, The Salvation Army Melbourne</h5>
+              <span className="time">&#047;&#047; Dec 2016 - Mar 2017</span>
+              <ul>
+                <li>Raised $500+ funds for the homelessness.</li>
+                <li>Collaborated with more than 50 volunteers in fund raising activates  </li>
               </ul>
 
               <h4>&#047;&#042; EDUCATION &#042;&#047;</h4>
