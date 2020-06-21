@@ -6,8 +6,6 @@ cache:
   # - node_modules
   yarn
 
-install: 
-  -npm install
 script:
     - gatsby build
 
