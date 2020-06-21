@@ -50,10 +50,10 @@
    gatsby build
    ```
 
-1. Preview the site as it will appear once deployed
+2. Preview the site as it will appear once deployed
 
    ```sh
    npm run serve
   ```
----
-#### 🎨 READEME.md style ➡️ [bchiang7](https://github.com/bchiang7])
+  
+## 🎨 READEME.md style ➡️ [bchiang7](https://github.com/bchiang7])
