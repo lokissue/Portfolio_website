@@ -2,8 +2,12 @@ language: node_js
 node_js:
   - "stable"
 cache:
-  directories:
-  - node_modules
+  # directories:
+  # - node_modules
+  yarn
+
+install: 
+  -npm install
 script:
     - gatsby build
 
