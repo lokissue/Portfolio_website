@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Layout from '../components/Layout';
+import Navbar from '../components/Nav/Navbar';
 // import Footer from '../components/Footer';
 import Home from "../components/Home"
 
@@ -9,7 +9,7 @@ export default class Index extends Component {
 
       <div>
         
-        <Layout {...this.props} />
+        <Navbar {...this.props} />
         <Home />
         {/* <Footer /> */}
       </div>

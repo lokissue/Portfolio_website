@@ -1,5 +1,5 @@
 import React from 'react';
-import Layout from '../components/Layout';
+import Navbar from '../components/Nav/Navbar';
 
 import { Title, MainWrapper } from '../components/Styles';
 import { ProjectsList } from '../components/ProjectsStyles';
@@ -34,9 +34,7 @@ export default class Projects extends React.Component {
   render() {
     return (
       <>
-      <Layout {...this.props}>
-
-      </Layout>
+      <Navbar {...this.props} />
       <MainWrapper color="#e74c3c">
         <Title color="#e74c3c">Projects</Title>
         <p>

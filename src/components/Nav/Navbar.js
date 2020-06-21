@@ -4,13 +4,13 @@ import Helmet from 'react-helmet';
 import 'typeface-lato';
 import 'typeface-inconsolata';
 
-import './styles.css';
+import '../styles.css';
 import {
   SiteHeader, SiteNav, NavLink, Logo, Name,
-} from './Styles';
+} from '../Styles';
 // import Footer from './Footer';
 
-const Layout = ({ location, children }) => (
+const Navbar = ({ location, children }) => (
   <div>
     <Helmet title="Luoming Zhang's Profolio website" />
     <SiteHeader>
@@ -43,4 +43,4 @@ const Layout = ({ location, children }) => (
   </div>
 );
 
-export default Layout;
+export default Navbar;

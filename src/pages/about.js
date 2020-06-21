@@ -1,6 +1,6 @@
 import React from 'react';
-import Layout from '../components/Layout';
-import { graphql, useStaticQuery, StaticQuery } from 'gatsby';
+import Navbar from '../components/Nav/Navbar';
+import { graphql, useStaticQuery } from 'gatsby';
 
 import { Title, MainWrapper } from '../components/Styles';
 import { Resume, FakeButtons } from '../components/AboutStyles';
@@ -10,8 +10,7 @@ export default class About extends React.Component {
   render() {
     return (
       <>
-      <Layout {...this.props}>
-      </Layout>
+      <Navbar {...this.props} />
       <div>
         <MainWrapper color="#16a085">
           <Title color="#16a085">About</Title>
