@@ -22,6 +22,13 @@ module.exports = {
         name: "images",
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/pages/posts`,
+        name: `posts`,
+      },
+    },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     'gatsby-plugin-netlify',
@@ -29,6 +36,16 @@ module.exports = {
       resolve: `gatsby-transformer-sharp`
     },
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        commonmark: true,
+        footnotes: true,
+        pedantic: true,
+        gfm: true,
+        plugins: [],
+      },
+    },
   ],
   pathPrefix: "/Portfolio_website",
 };
