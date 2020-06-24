@@ -43,7 +43,6 @@ const ResumeContent = () => {
       }
     }
    `)
-   console.log(data.allMarkdownRemark.edges[0].node.html)
 
    return (
       <div dangerouslySetInnerHTML={{__html: data.allMarkdownRemark.edges[0].node.html}} />
