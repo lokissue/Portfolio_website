@@ -5,32 +5,6 @@ import Navbar from '../components/Nav/Navbar';
 import { Title, MainWrapper } from '../components/Styles';
 import { ProjectsList } from '../components/ProjectsStyles';
 
-const projects = [
-  {
-    title: 'My profolio website',
-    link: '/',
-    desc: 'Built with: React, GastbyJS',
-  },
-  {
-    title: 'IBM Data Science Capstone Project',
-    link: 'https://github.com/lokissue/IBM-Data-Science-Professional-Certificate',
-    desc:
-      'IBM Data Science Professional Course on: <a target="_blank" href="https://www.coursera.org/account/accomplishments/professional-cert/L8R44J76KQK3?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=prof">Coursera</a><br />Analysed New York City neighbourhoods with K-means clustering, used numpy, pandas, matplotlib, sklearn, folium and Foursqure API',
-  },
-  {
-    title: 'Heirloom22',
-    link: 'https://heirloom22-2b4a8.web.app/',
-    desc: 
-      'Family Artefacts Management Web App, built with: React, Redux, Google Firebase, Ant Design'
-  },
-  {
-    title: 'Data Analytics Project: Education Level & Income',
-    link: 'https://github.com/lokissue/Data-Analysis-Income-Education-Level-in-VIC',
-    desc:
-    'Libraries used: numpy, pandas, matplotlib, seaborn'
-  }
-];
-
 const Projects = (props) => {
   const data = useStaticQuery(graphql`
     query {
