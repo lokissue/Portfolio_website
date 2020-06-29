@@ -121,7 +121,7 @@ const SiteNav = styled.nav`
 const NavLink = styled(Link)`
   text-decoration: none;
   color: #fff;
-  font-size: 14px;
+  font-size: 12px;
   padding: 15px 10px 18px;
   font-weight: 900;
   text-transform: uppercase;
@@ -134,6 +134,9 @@ const NavLink = styled(Link)`
   `} &:hover {
     border-bottom: 4px solid ${props => props.underline};
   }
+  ${media.phone`
+    font-size: 20px;
+  `} 
 `;
 
 const Main = styled.main`
